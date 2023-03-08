@@ -1,5 +1,90 @@
 *{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+ol{
+    padding: 20px 0 0 40px;
+    font-weight: 600;
+}
+
+p{
+    padding: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDetails h2{
+    padding: 20px;
+    font-size: 1.6em;
+}
+
+.logo{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor:pointer;
+}
+
+@keyframes expand{
+    0%{transform: scaleX(100%);}
+    100%{transform: translateX(40px);}
+}
+
+.logo:hover{
+    animation: expand 500ms;
+    transition-delay: 500ms;
+    width: 120px;
+}
+
+.logo2 img:hover{
+    opacity: 1;
+}
+
+.logo1{
+    position: relative;
+    float: right;
+    position: sticky;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    height: auto;
+}
+
+.logo1 img{
+    position: absolute;
+
+}
+
+.logo2{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.logo2 img{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: 1s;
+}
