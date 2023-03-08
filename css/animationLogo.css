@@ -72,7 +72,7 @@ footer{
 
 .logo1 img{
     position: absolute;
-
+    filter: grayscale(90%);
 }
 
 .logo2{
